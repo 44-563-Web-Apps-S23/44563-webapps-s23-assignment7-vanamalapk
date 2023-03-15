@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Hunter File </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -11,124 +11,184 @@
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-<style>
-  p.mouse {
-    background-color:red ;
-    font-size:15px;
-  }
-  #bushes{
-    background-color: yellow;
-    font-size: 15px;
-  }
-  #Penalty{
-    background-color:green;
-    font-size:15px;
-  }
-  #help{
-    background-color: lightblue;
-  }
-  #Click{
-    background-color: lightpink;
-  }
-
-</style>
+  <style>
+    p{
+        color:crimson;
+        background-color: bisque;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: unset;
+    }
+    #bushes{
+        color: red;
+        background-color: yellowgreen;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: inherit;
+    }
+    #penalty{
+        color: red;
+        background-color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+    }
+    #help{
+        color: white;
+        background-color: green;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="text text-danger">Find the mouse by Pavan Kalyan vanamala</h1>
-  <p class="mouse">Click on the bushes to search for the mouse, beware the cat</p>
-  <p id="bushes">Number of bushes checked is zero.</p>
-  <p id="Penalty">Penalty is zero.</p>
-  <p id="Click">Click for help.</p>
-  <p id="help">“Help report</p>
-
-
-  <div class="container-fluid">
-  
-  </div>
-
-  <div class="row">
-      <div class="col-sm">
-        <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
+<h1>Find the mouse by Pavankalyan vanamala</h1>
+<p>Click on the bushes to search for the mouse, beware the cat</p>
+<p id="bushes">Number of bushes checked is zero.</p>
+<p id="penalty">Penalty is zero.</p>
+<p onclick="help()">Click for help</p>
+<p id="help">Help report</p>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk1"  onclick="check(0)" class="float-start" alt="pk">
       </div>
-      <div class="col-sm">
-        <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk2" onclick="check(1)" class="float-start" alt="pk">
       </div>
-      <div class="col-sm">
-        <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk3" onclick="check(2)" class="float-start" alt="pk">
       </div>
-      <div class="col-sm">
-      <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk4" onclick="check(3)" class="float-start" alt="pk">
       </div>
-      <div class="col-sm">
-        <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk5" onclick="check(4)" class="float-start" alt="pk">
+      </div>
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img src="grass.jpg" height=100 width=100 id="pk6" onclick="check(5)" class="float-start" alt="pk">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk7" onclick="check(6)" class="float-start" alt="pk">
         </div>
-        <div class="col-sm">
-          <img src="bush.jpg" alt="bush" style="height: 100px; width: 100px;">
-          </div>
-   </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk8" onclick="check(7)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk9" onclick="check(8)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk10" onclick="check(9)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk11" onclick="check(10)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk12"  onclick="check(11)" class="float-start" alt="pk">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk13" onclick="check(12)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk14" onclick="check(13)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk15" onclick="check(14)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk16" onclick="check(15)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk17" onclick="check(16)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk18" onclick="check(17)" class="float-start" alt="pk">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk19" onclick="check(18)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk20" onclick="check(19)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk21" onclick="check(20)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk22" onclick="check(21)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk23" onclick="check(22)" class="float-start" alt="pk">
+        </div>
+        <div class="col-sm-2" style="background-color:lavender;">
+            <img src="grass.jpg" height=100 width=100 id="pk24" onclick="check(23)" class="float-start" alt="pk">
+        </div>
+    </div>
+</div>
 
-  <div class="row">
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px; ">
-    </div>
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px; ">
-    </div>
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px; ">
-    </div>
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="mouse.jpg" alt="mouse" style="height: 100px; width: 100px;">
-    </div>
-  </div>
+<script>
+    ids = new Array("pk1", "pk2", "pk3", "pk4", "pk5", "pk6", "pk7", "pk8", "pk9", "pk10", "pk11",
+       "pk12", "pk13", "pk14", "pk15", "pk16", "pk17", "pk18", "pk19", "pk20", "pk21", "pk22", 
+       "pk23", "pk24", "pk25");
+    checkCount = 0;
+    let penalty = 0; 
+    lastCheck = 0;
+    mouseLocation = 13;
+    catLocation =21;
+    gameOver = false;
+    function check(position){
+      console.log(position,checkCount,lastCheck,"verify methods");
+        if(!gameOver)
+        {
+         if(position==mouseLocation){
+            document.getElementById(ids[position]).src="mouse.jpg";
+            gameOver = true;
+            penalty -= 3;
+        }
+        else if(position==catLocation){
+            document.getElementById(ids[position]).src="tiger.jpg";
+            gameOver = true;
+            penalty =penalty+ 4;
+        }
+        else{
+            document.getElementById(ids[position]).src="bush.jpg";
+        }
+        checkCount++
+        penalty++
+        document.getElementById("bushes").innerHTML="Number of bushes checked is " + checkCount;
+        document.getElementById("penalty").innerHTML="penality is " + penalty;
+        lastCheck = position;
+    }
+    }
+   
+    function help(){
+        cat_col = catLocation%6;
+        cat_row = Math.floor(catLocation/6);
+        last_loc_col = lastCheck%6;
+        last_loc_row = Math.floor(lastCheck/6);
+        mouse_col = mouseLocation%6;
+        mouse_row = Math.floor(mouseLocation/6);
+        cat_row_diff = Math.abs(last_loc_row - cat_row);
+        cat_col_diff = Math.abs(last_loc_col - cat_col);
+        mouse_row_diff = Math.abs(last_loc_row - mouse_row);
+        mouse_col_diff = Math.abs(last_loc_col - mouse_col);
+        if(cat_row_diff<=1 && cat_col_diff<=1){
 
-  <div class="row">
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
- <div class="col-sm">
-  <img src="tiger.jpg" alt="tiger" style="height: 100px; width: 100px;">
- </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-    <div class="col-sm">
-      <img src="grass.jpg" alt="grass" style="height: 100px; width: 100px;">
-    </div>
-
-  </div>
+            output="meow";
+        }
+        else if(mouse_row_diff<=1 && mouse_col_diff<=1){
+            output="squeek";
+        }
+        else{
+            output="sorry, no help available"
+        }
+        penalty+=2;
+        document.getElementById("penalty").innerHTML="penality is " + penalty;
+        document.getElementById("help").innerHTML=output;
+        
+    }
+</script>
 </body>
 </html>
